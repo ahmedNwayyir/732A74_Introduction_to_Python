@@ -1,0 +1,9 @@
+Q1. The function clearLine does all the work for cleaning text, funciton also has the capbility to divide the text into words after cleaning the text.
+     The actual text is left unaffected. Our sript generates a whitelist which includes the allowable characters and all the text which is outside the whitelist is removed. 
+     The lines splitted on space and words are used for different tasks
+
+ Q2. The data structure we used is dictionary because with dictionary can program speed is efficient. 
+     This is for cases that are used for supplying multiple parameters, the builin functions to work on ditionaries are easy.
+	 Dictionaries are basically hash tables and implemented as a key value pair. Keys can be of any datatype 
+     Its useful to retrieve the values based on their keys, when there is no particular order in the dictionary values.  
+     indexing like in dictionaries is not possible. through this we can fetch values of different keys and its value. 

@@ -1,0 +1,53 @@
+Frequency table for alphabetic letters:
+e (480970 occurrences)
+t (354107 occurrences)
+o (331920 occurrences)
+a (309408 occurrences)
+i (268911 occurrences)
+n (260133 occurrences)
+s (258276 occurrences)
+h (255742 occurrences)
+r (251863 occurrences)
+l (180723 occurrences)
+d (149288 occurrences)
+u (137354 occurrences)
+m (117435 occurrences)
+y (99484 occurrences)
+w (96315 occurrences)
+c (91697 occurrences)
+f (86140 occurrences)
+g (72858 occurrences)
+b (64067 occurrences)
+p (61506 occurrences)
+v (40149 occurrences)
+k (37823 occurrences)
+x (5331 occurrences)
+j (4905 occurrences)
+q (3961 occurrences)
+z (1842 occurrences)
+è (32 occurrences)
+æ (13 occurrences)
+à (1 occurrences)
+The total number of words is 971363
+The number of unique words is 25830
+The five most common words are: 
+the (30125 occurrences)
+-- king, 904
+-- world, 483
+-- duke, 422
+and (28444 occurrences)
+-- i, 1004
+-- the, 921
+-- to, 503
+i (23874 occurrences)
+-- am, 1960
+-- ll, 1806
+-- have, 1724
+to (21383 occurrences)
+-- the, 1883
+-- be, 1049
+-- my, 600
+of (18839 occurrences)
+-- the, 1641
+-- my, 761
+-- his, 636

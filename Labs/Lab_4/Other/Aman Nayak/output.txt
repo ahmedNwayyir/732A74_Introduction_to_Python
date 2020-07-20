@@ -1,0 +1,66 @@
+Alphabet Frequency
+e      480970
+t      354107
+o      332717
+a      309408
+i      268911
+s      266424
+n      260133
+h      255742
+r      251863
+l      180723
+d      158715
+u      137354
+m      117435
+y      99484
+w      96315
+c      91697
+f      86140
+g      72858
+b      64067
+p      61506
+v      40149
+k      37823
+x      5331
+j      4905
+q      3961
+z      1842
+
+-----------------------------------------------------
+
+The total number of words in the file are:  959261
+
+-----------------------------------------------------
+
+The total number of unique words in the file are:  33501
+-----------------------------------------------------
+
+Ocurrences of the top 5 common words followed by their top 3 successors:
+
+the(30080 occurrence)
+-- king , 749
+-- world , 437
+-- duke , 364
+
+and(28358 occurrence)
+-- the , 854
+-- i , 791
+-- so , 432
+
+i(21859 occurrence)
+-- am , 1952
+-- have , 1707
+-- will , 1624
+
+to(20884 occurrence)
+-- the , 1560
+-- be , 1042
+-- my , 507
+
+of(18812 occurrence)
+-- the , 1623
+-- my , 760
+-- his , 634
+
+-----------------------------------------------------
+*****************End of File*************************

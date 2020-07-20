@@ -1,0 +1,81 @@
+frequency table for alphabetic letters:
+e 443518
+t 315039
+o 303818
+a 264225
+h 238581
+s 235144
+n 234288
+r 226752
+i 216765
+l 158336
+d 145265
+u 123962
+m 102653
+y 92032
+w 79577
+f 74664
+c 72725
+g 62227
+I 52146
+p 50748
+b 50627
+A 45183
+T 39068
+E 37452
+v 37000
+k 31924
+S 31280
+O 28899
+N 25845
+R 25111
+L 22387
+C 18972
+H 17161
+W 16738
+M 14782
+D 13450
+B 13440
+U 13392
+F 11476
+P 10758
+G 10631
+Y 7452
+K 5899
+x 4938
+V 3149
+j 3042
+q 2729
+J 1863
+Q 1232
+z 1226
+Z 616
+X 393
+è 32
+æ 12
+à 1
+Æ 1
+
+number of words:  960390
+number of unique words 76204
+
+the  ( 25471  occurences)
+-- King 271
+-- world 245
+-- Duke 195
+I  ( 20660  occurences)
+-- am 1825
+-- have 1620
+-- will 1496
+and  ( 19843  occurences)
+-- the 728
+-- I 446
+-- a 337
+to  ( 16981  occurences)
+-- the 1412
+-- be 843
+-- my 487
+of  ( 16732  occurences)
+-- the 1549
+-- my 720
+-- his 589
