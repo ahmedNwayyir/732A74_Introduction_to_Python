@@ -6,22 +6,23 @@ from random import choices
 def textGenerator(contents):
     cur_word = sys.argv[2]
     max_words = int(sys.argv[3])
-
     msg = cur_word
 
-    word_pairs = text_stats.getWordPairs(contents)
-    word_dic = {pair[1]:count for pair, count in word_pairs.items() if pair[0] == cur_word}
-    word_count = sum(word_dic.values())
+    pair_counts = text_stats.getPairCounts(contents)
+    # get the successive words and their frequencies of the chosen word
+    follow_words_dic = {pair[1]:count for pair, count in pair_counts.items() if pair[0] == cur_word}
 
-    word_counter = 1
-    while word_counter < max_words and len(list(word_dic.keys())) > 0:
-        next_weights = {next_word:count/word_count for next_word, count in word_dic.items()}
-        next_word = choices(population=list(next_weights.keys()), weights=list(next_weights.values()), k=1)
+    word_counter = 0
+    # loop through the succussive words of the chosen word 
+    while word_counter < max_words and cur_word != [follow_words_dic.keys][-1]:
+        # for the current word in the loop we get the frequencies of the succussive words
+        follow_words_dic = {pair[1]:count for pair, count in pair_counts.items() if pair[0] == cur_word}
+        # randomly pick (based on weight) the next word
+        next_word = choices(population= list(follow_words_dic.keys()), weights = list(follow_words_dic.values()), k = 1)
         cur_word = next_word[0]
         msg = msg + " " + cur_word
-        del word_dic[cur_word]
         word_counter += 1
-    
+
     return msg  
 
 

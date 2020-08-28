@@ -34,19 +34,19 @@ def getCommonWords(contents):
     return common_words
 
 
-def getWordPairs(contents):
+def getPairCounts(contents):
     copy1, copy2 = itertools.tee(contents)
     next(copy2, None)
-    word_pairs = Counter((word1, word2) for word1, word2 in zip(copy1, copy2))
-    return word_pairs
+    pair_counts = Counter((word1, word2) for word1, word2 in zip(copy1, copy2))
+    return pair_counts
 
-def getFollowWords(common_words, word_pairs):
+def getFollowWords(common_words, pair_counts):
     common_words = [a_tuple[0] for a_tuple in common_words[0:5]]
     follow_words = {}
     for word in common_words:
-        word_dic = {pair:count for pair, count in word_pairs.items() if pair[0] == word}
-        word_dic = sorted(word_dic.items(), key=lambda x: x[1], reverse=True)[0:3]
-        follow_words[word] = [word_dic[0][0][1], word_dic[0][1], word_dic[1][0][1], word_dic[1][1], word_dic[2][0][1], word_dic[2][1]] 
+        pairs_dic = {pair:count for pair, count in pair_counts.items() if pair[0] == word}
+        pairs_dic = sorted(pairs_dic.items(), key=lambda x: x[1], reverse=True)[0:3]
+        follow_words[word] = [pairs_dic[0][0][1], pairs_dic[0][1], pairs_dic[1][0][1], pairs_dic[1][1], pairs_dic[2][0][1], pairs_dic[2][1]] 
     return follow_words    
 
 
@@ -75,8 +75,8 @@ def output(contents):
 
     print("\n\nMost common following words:\n")
     print(sep)
-    word_pairs = getWordPairs(contents)
-    follow_words = getFollowWords(common_words, word_pairs)
+    pair_counts = getPairCounts(contents)
+    follow_words = getFollowWords(common_words, pair_counts)
     for key, value in follow_words.items():
         print(f"{key} \n\t {value[0:2]} \n\t {value[2:4]} \n\t {value[4:6]}\n")
 
@@ -108,8 +108,8 @@ def writeToFile(contents):
 
         out.write("\n\nMost common following words:\n")
         out.write(sep)
-        word_pairs = getWordPairs(contents)
-        follow_words = getFollowWords(common_words, word_pairs)
+        pair_counts = getPairCounts(contents)
+        follow_words = getFollowWords(common_words, pair_counts)
         for key, value in follow_words.items():
             out.write(f"{key} \n\t {value[0:2]} \n\t {value[2:4]} \n\t {value[4:6]}\n")
 
