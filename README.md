@@ -3,8 +3,6 @@ Linköping University, 2nd semester 2020
 
 ## Intended learning outcomes
 
-After completion of the course the student should be able to:
-
 - write computer codes containing basic Python language elements 
 - use simple and advanced data structures in problem solving 
 - apply tools available in most common Python packages 
